@@ -1,5 +1,5 @@
 [project]
-name = "mcp-web-extractor"
+name = "mcp-trafilatura-server"
 version = "0.1.0"
 description = "MCP server for extracting clean content from web pages and converting to markdown"
 readme = "README.md"
@@ -44,7 +44,7 @@ dev = [
 ]
 
 [project.scripts]
-mcp-web-extractor = "trafilatura_mcp.server:main"
+mcp-trafilatura-server = "trafilatura_mcp.server:main"
 
 [project.urls]
 Homepage = "https://github.com/achieveai/mcp-web-extractor"
@@ -52,7 +52,7 @@ Repository = "https://github.com/achieveai/mcp-web-extractor"
 Issues = "https://github.com/achieveai/mcp-web-extractor/issues"
 Documentation = "https://github.com/achieveai/mcp-web-extractor/blob/main/README.md"
 "UVX Installation" = "https://github.com/achieveai/mcp-web-extractor/blob/main/INSTALL_UVX.md"
-"PyPI" = "https://pypi.org/project/mcp-web-extractor/"
+"PyPI" = "https://pypi.org/project/mcp-trafilatura-server/"
 
 [build-system]
 requires = ["setuptools>=68", "wheel"]
