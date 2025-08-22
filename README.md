@@ -1,7 +1,7 @@
-# MCP Trafilatura
+# MCP Trafilatura Server
 
-[![PyPI version](https://badge.fury.io/py/mcp-trafilatura.svg)](https://badge.fury.io/py/mcp-trafilatura)
-[![Python](https://img.shields.io/pypi/pyversions/mcp-trafilatura.svg)](https://pypi.org/project/mcp-trafilatura/)
+[![PyPI version](https://badge.fury.io/py/mcp-trafilatura-server.svg)](https://badge.fury.io/py/mcp-trafilatura-server)
+[![Python](https://img.shields.io/pypi/pyversions/mcp-trafilatura-server.svg)](https://pypi.org/project/mcp-trafilatura-server/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 A Model Context Protocol (MCP) server that provides web content extraction capabilities using [Trafilatura](https://trafilatura.readthedocs.io/)'s Python API. This server allows MCP clients to extract clean, readable content from web pages and HTML documents.
@@ -21,7 +21,7 @@ A Model Context Protocol (MCP) server that provides web content extraction capab
 ### Quick Install via pip
 
 ```bash
-pip install mcp-trafilatura
+pip install mcp-trafilatura-server
 ```
 
 ### Option 1: Using uvx (Recommended - No Installation)
@@ -30,10 +30,10 @@ The easiest way to run the server with any MCP client:
 
 ```bash
 # Run directly with uvx (no installation needed)
-uvx mcp-trafilatura
+uvx mcp-trafilatura-server
 
 # Or specify from local directory during development
-uvx --from . mcp-trafilatura
+uvx --from . mcp-trafilatura-server
 ```
 
 For use with Claude Desktop, add to your configuration:
@@ -43,7 +43,7 @@ For use with Claude Desktop, add to your configuration:
   "mcpServers": {
     "trafilatura": {
       "command": "uvx",
-      "args": ["mcp-trafilatura"]
+      "args": ["mcp-trafilatura-server"]
     }
   }
 }
@@ -55,7 +55,7 @@ Or for local development:
   "mcpServers": {
     "trafilatura": {
       "command": "uvx",
-      "args": ["--from", "/path/to/mcp-trafilatura", "mcp-trafilatura"]
+      "args": ["--from", "/path/to/mcp-trafilatura", "mcp-trafilatura-server"]
     }
   }
 }
@@ -73,14 +73,14 @@ uv venv
 uv pip install -e .
 
 # Run the server
-uv run mcp-trafilatura
+uv run mcp-trafilatura-server
 ```
 
 ### Option 3: Traditional pip Installation
 
 ```bash
 # Install from PyPI
-pip install mcp-trafilatura
+pip install mcp-trafilatura-server
 
 # Or for development:
 git clone https://github.com/achieveai/mcp-web-extractor.git
@@ -110,7 +110,7 @@ The server can be used with any MCP-compatible client. Register it in your clien
 {
   "mcpServers": {
     "web-extractor": {
-      "command": "mcp-web-extractor",
+      "command": "mcp-trafilatura-server",
       "args": []
     }
   }
@@ -123,7 +123,7 @@ You can also run the server directly:
 
 ```bash
 # Run the server (listens on stdio)
-mcp-trafilatura
+mcp-trafilatura-server
 
 # Or run the module directly
 python -m trafilatura_mcp.server
@@ -203,7 +203,7 @@ Using uvx (recommended - no installation needed):
   "mcpServers": {
     "trafilatura": {
       "command": "uvx",
-      "args": ["mcp-trafilatura"]
+      "args": ["mcp-trafilatura-server"]
     }
   }
 }
@@ -214,7 +214,7 @@ Or if installed via pip:
 {
   "mcpServers": {
     "web-extractor": {
-      "command": "mcp-web-extractor",
+      "command": "mcp-trafilatura-server",
       "args": []
     }
   }
@@ -231,7 +231,7 @@ Add to your Continue configuration:
     {
       "name": "trafilatura",
       "command": "uvx",
-      "args": ["mcp-trafilatura"]
+      "args": ["mcp-trafilatura-server"]
     }
   ]
 }
