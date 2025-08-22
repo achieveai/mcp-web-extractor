@@ -1,6 +1,6 @@
 # Publishing to PyPI
 
-This guide covers how to publish `mcp-trafilatura` to PyPI.
+This guide covers how to publish `mcp-web-extractor` to PyPI.
 
 ## Prerequisites
 
@@ -58,11 +58,11 @@ This guide covers how to publish `mcp-trafilatura` to PyPI.
    source test-env/bin/activate  # On Windows: test-env\Scripts\activate
    
    # Install from TestPyPI
-   pip install -i https://test.pypi.org/simple/ mcp-trafilatura==0.1.0 \
+   pip install -i https://test.pypi.org/simple/ mcp-web-extractor==0.1.0 \
      --extra-index-url https://pypi.org/simple
    
    # Test the command
-   mcp-trafilatura --help
+   mcp-web-extractor --help
    ```
 
 ## Publishing to PyPI
@@ -80,8 +80,8 @@ This guide covers how to publish `mcp-trafilatura` to PyPI.
 
 3. Verify installation:
    ```bash
-   pip install mcp-trafilatura
-   mcp-trafilatura --help
+   pip install mcp-web-extractor
+   mcp-web-extractor --help
    ```
 
 ## Using GitHub Actions (Optional)
@@ -153,7 +153,7 @@ Examples:
 ## Troubleshooting
 
 ### Name Already Taken
-- Choose a different name (e.g., `mcp-trafilatura-extract`)
+- Choose a different name (e.g., `mcp-web-extractor-extract`)
 - Check availability at https://pypi.org/project/YOUR-NAME/
 
 ### Upload Fails
@@ -187,10 +187,10 @@ Once published to PyPI, users can run directly with:
 
 ```bash
 # No installation needed!
-uvx mcp-trafilatura
+uvx mcp-web-extractor
 
 # Or with pipx
-pipx run mcp-trafilatura
+pipx run mcp-web-extractor
 ```
 
 This makes the tool instantly available to all MCP users without any setup.

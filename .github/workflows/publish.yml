@@ -74,7 +74,7 @@ jobs:
           TWINE_PASSWORD: ${{ secrets.TEST_PYPI_API_TOKEN }}
         run: |
           twine upload -r testpypi dist/*
-          echo "::notice::Published to TestPyPI! Test with: pip install -i https://test.pypi.org/simple/ mcp-trafilatura"
+          echo "::notice::Published to TestPyPI! Test with: pip install -i https://test.pypi.org/simple/ mcp-web-extractor"
 
   publish:
     needs: build
@@ -102,4 +102,4 @@ jobs:
           TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
         run: |
           twine upload dist/*
-          echo "::notice::Published to PyPI! Install with: pip install mcp-trafilatura"
+          echo "::notice::Published to PyPI! Install with: pip install mcp-web-extractor"

@@ -133,7 +133,7 @@ async def main():
     print("\n" + "=" * 50)
     print("✨ Example usage complete!")
     print("\nTo use this as an MCP server, run:")
-    print("  trafilatura-mcp")
+    print("  mcp-web-extractor")
     print("\nOr install and configure in your MCP client.")
 
 

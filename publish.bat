@@ -1,5 +1,5 @@
 @echo off
-REM Publishing script for mcp-trafilatura (Windows)
+REM Publishing script for mcp-web-extractor (Windows)
 
 setlocal enabledelayedexpansion
 
@@ -97,10 +97,10 @@ if "%TEST_MODE%"=="--test" (
     echo [OK] Published to TestPyPI!
     echo.
     echo Test installation with:
-    echo   pip install -i https://test.pypi.org/simple/ mcp-trafilatura==%VERSION% --extra-index-url https://pypi.org/simple
+    echo   pip install -i https://test.pypi.org/simple/ mcp-web-extractor==%VERSION% --extra-index-url https://pypi.org/simple
     echo.
     echo Or with uvx:
-    echo   uvx --index-url https://test.pypi.org/simple/ mcp-trafilatura
+    echo   uvx --index-url https://test.pypi.org/simple/ mcp-web-extractor
     
 ) else (
     echo.
@@ -129,13 +129,13 @@ if "%TEST_MODE%"=="--test" (
     echo.
     echo [OK] Published to PyPI!
     echo.
-    echo Package available at: https://pypi.org/project/mcp-trafilatura/%VERSION%/
+    echo Package available at: https://pypi.org/project/mcp-web-extractor/%VERSION%/
     echo.
     echo Install with:
-    echo   pip install mcp-trafilatura
+    echo   pip install mcp-web-extractor
     echo.
     echo Or run directly with:
-    echo   uvx mcp-trafilatura
+    echo   uvx mcp-web-extractor
     echo.
     echo Don't forget to:
     echo   1. Create a git tag: git tag -a v%VERSION% -m "Release version %VERSION%"

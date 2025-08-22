@@ -1,7 +1,7 @@
 [project]
-name = "mcp-trafilatura"
+name = "mcp-web-extractor"
 version = "0.1.0"
-description = "MCP server exposing Trafilatura web content extraction as a tool"
+description = "MCP server for extracting clean content from web pages and converting to markdown"
 readme = "README.md"
 requires-python = ">=3.9"
 license = {file = "LICENSE"}
@@ -44,15 +44,15 @@ dev = [
 ]
 
 [project.scripts]
-mcp-trafilatura = "trafilatura_mcp.server:main"
+mcp-web-extractor = "trafilatura_mcp.server:main"
 
 [project.urls]
-Homepage = "https://github.com/your-org/mcp-trafilatura"
-Repository = "https://github.com/your-org/mcp-trafilatura"
-Issues = "https://github.com/your-org/mcp-trafilatura/issues"
-Documentation = "https://github.com/your-org/mcp-trafilatura/blob/main/README.md"
-"UVX Installation" = "https://github.com/your-org/mcp-trafilatura/blob/main/INSTALL_UVX.md"
-"PyPI" = "https://pypi.org/project/mcp-trafilatura/"
+Homepage = "https://github.com/your-org/mcp-web-extractor"
+Repository = "https://github.com/your-org/mcp-web-extractor"
+Issues = "https://github.com/your-org/mcp-web-extractor/issues"
+Documentation = "https://github.com/your-org/mcp-web-extractor/blob/main/README.md"
+"UVX Installation" = "https://github.com/your-org/mcp-web-extractor/blob/main/INSTALL_UVX.md"
+"PyPI" = "https://pypi.org/project/mcp-web-extractor/"
 
 [build-system]
 requires = ["setuptools>=68", "wheel"]

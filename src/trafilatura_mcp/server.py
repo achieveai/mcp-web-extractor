@@ -261,7 +261,7 @@ async def extract_markdown_tool(args: Dict[str, Any]) -> List[TextContent]:
 
 
 # Initialize MCP server
-server = Server(name="trafilatura-mcp", version="0.1.0")
+server = Server(name="mcp-web-extractor", version="0.1.0")
 
 
 @server.list_tools()

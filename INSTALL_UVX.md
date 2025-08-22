@@ -38,17 +38,17 @@ Run the server directly from PyPI:
 
 ```bash
 # Install from PyPI and run
-uvx mcp-trafilatura
+uvx mcp-web-extractor
 ```
 
 For local development:
 
 ```bash
 # From the project directory
-uvx --from . mcp-trafilatura
+uvx --from . mcp-web-extractor
 
 # Or from any location
-uvx --from /path/to/mcp-trafilatura mcp-trafilatura
+uvx --from /path/to/mcp-web-extractor mcp-web-extractor
 ```
 
 ### For Development
@@ -63,7 +63,7 @@ uv venv
 uv pip install -e .
 
 # Run with uv
-uv run mcp-trafilatura
+uv run mcp-web-extractor
 ```
 
 ## Configuring MCP Clients to Use uvx
@@ -83,7 +83,7 @@ Add the following configuration:
   "mcpServers": {
     "trafilatura": {
       "command": "uvx",
-      "args": ["mcp-trafilatura"]
+      "args": ["mcp-web-extractor"]
     }
   }
 }
@@ -95,13 +95,13 @@ For local development:
   "mcpServers": {
     "trafilatura": {
       "command": "uvx",
-      "args": ["--from", "/absolute/path/to/mcp-trafilatura", "mcp-trafilatura"]
+      "args": ["--from", "/absolute/path/to/mcp-web-extractor", "mcp-web-extractor"]
     }
   }
 }
 ```
 
-**Note**: Replace `/absolute/path/to/mcp-trafilatura` with the actual absolute path to your project directory.
+**Note**: Replace `/absolute/path/to/mcp-web-extractor` with the actual absolute path to your project directory.
 
 ### VS Code with Continue
 
@@ -113,7 +113,7 @@ Add to your Continue configuration:
     {
       "name": "trafilatura",
       "command": "uvx",
-      "args": ["mcp-trafilatura"]
+      "args": ["mcp-web-extractor"]
     }
   ]
 }
@@ -128,7 +128,7 @@ You can set environment variables for the server:
   "mcpServers": {
     "trafilatura": {
       "command": "uvx",
-      "args": ["mcp-trafilatura"],
+      "args": ["mcp-web-extractor"],
       "env": {
         "LOG_LEVEL": "DEBUG",
         "TIMEOUT": "60"
@@ -174,7 +174,7 @@ If you get import errors, ensure all dependencies are specified in `pyproject.to
 ```bash
 # Clear uv cache and retry
 uv cache clean
-uvx --from . mcp-trafilatura
+uvx --from . mcp-web-extractor
 ```
 
 ### Debugging
@@ -183,10 +183,10 @@ To see more detailed output:
 
 ```bash
 # Run with verbose output
-uvx --from . --verbose mcp-trafilatura
+uvx --from . --verbose mcp-web-extractor
 
 # Or set debug logging
-LOG_LEVEL=DEBUG uvx --from . mcp-trafilatura
+LOG_LEVEL=DEBUG uvx --from . mcp-web-extractor
 ```
 
 ## Publishing to PyPI (Optional)
@@ -205,7 +205,7 @@ If you want to make the server available via `uvx trafilatura-mcp` without speci
 
 3. Then anyone can run:
    ```bash
-   uvx mcp-trafilatura
+   uvx mcp-web-extractor
    ```
 
 ## Alternative: Using uv pip
@@ -221,7 +221,7 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 uv pip install .
 
 # Run the server
-mcp-trafilatura
+mcp-web-extractor
 ```
 
 ## Notes

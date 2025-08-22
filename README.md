@@ -109,8 +109,8 @@ The server can be used with any MCP-compatible client. Register it in your clien
 ```json
 {
   "mcpServers": {
-    "trafilatura": {
-      "command": "mcp-trafilatura",
+    "web-extractor": {
+      "command": "mcp-web-extractor",
       "args": []
     }
   }
@@ -213,8 +213,8 @@ Or if installed via pip:
 ```json
 {
   "mcpServers": {
-    "trafilatura": {
-      "command": "mcp-trafilatura",
+    "web-extractor": {
+      "command": "mcp-web-extractor",
       "args": []
     }
   }
