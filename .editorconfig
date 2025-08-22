@@ -1,0 +1,113 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# Python files
+[*.py]
+indent_style = space
+indent_size = 4
+max_line_length = 88
+
+# Python stub files
+[*.pyi]
+indent_style = space
+indent_size = 4
+
+# YAML files
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# JSON files
+[*.json]
+indent_style = space
+indent_size = 2
+
+# TOML files
+[*.toml]
+indent_style = space
+indent_size = 4
+
+# Markdown files
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = 80
+
+# reStructuredText files
+[*.rst]
+indent_style = space
+indent_size = 3
+max_line_length = 80
+
+# Shell scripts
+[*.{sh,bash,zsh}]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+
+# Batch files
+[*.{bat,cmd,ps1}]
+indent_style = space
+indent_size = 2
+end_of_line = crlf
+
+# Makefiles
+[{Makefile,makefile,*.mk}]
+indent_style = tab
+indent_size = 4
+
+# Docker files
+[{Dockerfile,*.dockerfile}]
+indent_style = space
+indent_size = 2
+
+# HTML files
+[*.html]
+indent_style = space
+indent_size = 2
+
+# CSS files
+[*.css]
+indent_style = space
+indent_size = 2
+
+# JavaScript/TypeScript files
+[*.{js,jsx,ts,tsx}]
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+# GitHub Actions
+[.github/workflows/*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# Configuration files
+[*.{ini,cfg}]
+indent_style = space
+indent_size = 4
+
+# Git configuration files
+[.git*]
+indent_style = space
+indent_size = 2
+
+# Special files
+[{LICENSE,README,AUTHORS,CONTRIBUTORS,CHANGES,HISTORY,NOTICE}]
+indent_style = space
+indent_size = 2
+
+# Jupyter notebooks
+[*.ipynb]
+indent_style = space
+indent_size = 2

@@ -1,0 +1,130 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Python files
+*.py text eol=lf
+*.pyi text eol=lf
+*.pyx text eol=lf
+*.pxd text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+
+# Batch files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Configuration files
+*.json text eol=lf
+*.toml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+.editorconfig text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
+# Documentation
+*.md text eol=lf
+*.rst text eol=lf
+*.txt text eol=lf
+LICENSE text eol=lf
+README text eol=lf
+AUTHORS text eol=lf
+CONTRIBUTORS text eol=lf
+CHANGES text eol=lf
+HISTORY text eol=lf
+NOTICE text eol=lf
+
+# Web files
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.vue text eol=lf
+*.xml text eol=lf
+
+# Docker
+Dockerfile text eol=lf
+*.dockerfile text eol=lf
+docker-compose.yml text eol=lf
+docker-compose.yaml text eol=lf
+
+# Jupyter notebooks
+*.ipynb text eol=lf
+
+# Data files
+*.csv text eol=lf
+*.tsv text eol=lf
+*.sql text eol=lf
+
+# Makefiles
+Makefile text eol=lf
+makefile text eol=lf
+*.mk text eol=lf
+*.make text eol=lf
+
+# GitHub Actions
+*.yml text eol=lf linguist-language=YAML
+*.yaml text eol=lf linguist-language=YAML
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+*.ttf binary
+*.otf binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.tar binary
+*.tar.gz binary
+*.tar.bz2 binary
+*.7z binary
+*.rar binary
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.pyc binary
+*.pyo binary
+*.pyd binary
+*.db binary
+*.sqlite binary
+*.sqlite3 binary
+*.pkl binary
+*.pickle binary
+*.npy binary
+*.npz binary
+*.parquet binary
+
+# Diff settings
+*.py diff=python
+*.ipynb diff=jupyter
+
+# Export ignore (files to exclude from archive exports)
+.github export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore
+.editorconfig export-ignore
+tests/ export-ignore
+docs/ export-ignore
+examples/ export-ignore
+*.md export-ignore
+.pytest_cache/ export-ignore
+.mypy_cache/ export-ignore
+.ruff_cache/ export-ignore
+.coverage export-ignore
+htmlcov/ export-ignore

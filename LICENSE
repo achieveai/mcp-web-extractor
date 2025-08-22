@@ -1,0 +1,63 @@
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+Copyright (C) 2024 WebPage-To-Markdown Contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+---
+
+IMPORTANT NOTICE:
+
+This MCP server uses Trafilatura (https://github.com/adbar/trafilatura),
+which is licensed under the GNU General Public License v3.0 or later.
+As this server imports and uses Trafilatura's Python API directly,
+it constitutes a derivative work and must also be distributed under
+the GPL-3.0 license.
+
+For the full text of the GNU General Public License v3.0, please visit:
+https://www.gnu.org/licenses/gpl-3.0.html
+
+---
+
+Additional Components:
+
+The Model Context Protocol (MCP) SDK components used in this project
+are subject to their own licensing terms. Please refer to:
+https://github.com/modelcontextprotocol/python-sdk
+
+---
+
+Alternative Licensing:
+
+If you require this software under a different license for commercial
+purposes, you may consider:
+
+1. Using Option A from the documentation (CLI subprocess approach)
+   which may provide more licensing flexibility
+2. Contacting the Trafilatura project maintainers for commercial
+   licensing options
+3. Implementing your own extraction logic without using Trafilatura
+
+---
+
+Third-Party Dependencies:
+
+This software includes dependencies with their own licenses:
+- modelcontextprotocol: MIT License
+- pydantic: MIT License
+- aiohttp: Apache License 2.0
+
+Please review each dependency's license terms in their respective
+repositories or documentation.
