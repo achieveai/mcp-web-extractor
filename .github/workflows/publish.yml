@@ -53,6 +53,8 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'workflow_dispatch' && github.event.inputs.test_pypi == 'true'
     environment: test-pypi
+    permissions:
+      id-token: write
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v4
@@ -60,27 +62,18 @@ jobs:
           name: dist
           path: dist/
       
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      
-      - name: Install twine
-        run: pip install twine
-      
       - name: Publish to TestPyPI
-        env:
-          TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.TEST_PYPI_API_TOKEN }}
-        run: |
-          twine upload -r testpypi dist/*
-          echo "::notice::Published to TestPyPI! Test with: pip install -i https://test.pypi.org/simple/ mcp-web-extractor"
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository-url: https://test.pypi.org/legacy/
 
   publish:
     needs: build
     runs-on: ubuntu-latest
     if: github.event_name == 'release' || (github.event_name == 'workflow_dispatch' && github.event.inputs.test_pypi == 'false')
     environment: pypi
+    permissions:
+      id-token: write
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v4
@@ -88,18 +81,5 @@ jobs:
           name: dist
           path: dist/
       
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      
-      - name: Install twine
-        run: pip install twine
-      
       - name: Publish to PyPI
-        env:
-          TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
-        run: |
-          twine upload dist/*
-          echo "::notice::Published to PyPI! Install with: pip install mcp-web-extractor"
+        uses: pypa/gh-action-pypi-publish@release/v1
