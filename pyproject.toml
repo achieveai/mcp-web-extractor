@@ -6,10 +6,10 @@ readme = "README.md"
 requires-python = ">=3.9"
 license = {file = "LICENSE"}
 authors = [
-    {name = "Your Name", email = "you@example.com"}
+    {name = "AchieveAI", email = "contact@achieveai.com"}
 ]
 maintainers = [
-    {name = "Your Name", email = "you@example.com"}
+    {name = "AchieveAI", email = "contact@achieveai.com"}
 ]
 keywords = ["mcp", "model-context-protocol", "trafilatura", "web-scraping", "markdown", "content-extraction", "html-to-markdown"]
 classifiers = [
@@ -47,11 +47,11 @@ dev = [
 mcp-web-extractor = "trafilatura_mcp.server:main"
 
 [project.urls]
-Homepage = "https://github.com/your-org/mcp-web-extractor"
-Repository = "https://github.com/your-org/mcp-web-extractor"
-Issues = "https://github.com/your-org/mcp-web-extractor/issues"
-Documentation = "https://github.com/your-org/mcp-web-extractor/blob/main/README.md"
-"UVX Installation" = "https://github.com/your-org/mcp-web-extractor/blob/main/INSTALL_UVX.md"
+Homepage = "https://github.com/achieveai/mcp-web-extractor"
+Repository = "https://github.com/achieveai/mcp-web-extractor"
+Issues = "https://github.com/achieveai/mcp-web-extractor/issues"
+Documentation = "https://github.com/achieveai/mcp-web-extractor/blob/main/README.md"
+"UVX Installation" = "https://github.com/achieveai/mcp-web-extractor/blob/main/INSTALL_UVX.md"
 "PyPI" = "https://pypi.org/project/mcp-web-extractor/"
 
 [build-system]

@@ -65,7 +65,7 @@ Or for local development:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/mcp-trafilatura.git
+git clone https://github.com/achieveai/mcp-web-extractor.git
 cd mcp-trafilatura
 
 # Create virtual environment and install
@@ -83,7 +83,7 @@ uv run mcp-trafilatura
 pip install mcp-trafilatura
 
 # Or for development:
-git clone https://github.com/your-org/mcp-trafilatura.git
+git clone https://github.com/achieveai/mcp-web-extractor.git
 cd mcp-trafilatura
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
@@ -259,7 +259,7 @@ mcp-trafilatura/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/mcp-trafilatura.git
+git clone https://github.com/achieveai/mcp-web-extractor.git
 cd mcp-trafilatura
 
 # Create virtual environment
